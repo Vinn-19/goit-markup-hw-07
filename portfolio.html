@@ -42,25 +42,141 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts-item">
-            <a
-              class="header-contacts-link link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts-item">
-            <a class="header-contacts-link link" href="tel:+110001111111"
-              >+11(000)111-11-11</a
-            >
-          </li>
-        </ul>
+
+        <address class="header-contacts">
+          <ul class="header-contacts-list list">
+            <li class="header-contacts-item">
+              <a
+                class="header-contacts-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts-item">
+              <a class="header-contacts-link link" href="tel:+110001111111"
+                >+11(000)111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <!-- Hamburger Menu Open -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger-open"></use>
+          </svg>
+        </button>
+
+        <!-- Hamburger Menu Close Icon and Navigation -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <!-- Hamburger Menu Close Icon -->
+          <button class="menu-toggle hamburger-close-button js-close-menu">
+            <svg class="menu-icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-hamburger-close"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation -->
+          <ul class="hamburger-menu-list list">
+            <li class="hamburger-menu-item">
+              <a class="hamburger-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="hamburger-menu-item">
+              <a
+                class="hamburger-menu-link menu-active link"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="hamburger-menu-item">
+              <a class="hamburger-menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Contacts Address -->
+          <div class="hamburger-wrapper">
+            <address class="hamburger-address">
+              <ul class="hamburger-contacts-list list">
+                <li class="hamburger-contacts-item">
+                  <a
+                    class="hamburger-contacts-link highlight link"
+                    href="tel:+110001111111"
+                    >+11(000)111-11-11</a
+                  >
+                </li>
+                <li class="hamburger-contacts-item">
+                  <a
+                    class="hamburger-contacts-link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <!-- Mobile Social list -->
+            <ul class="hamburger-social-list list">
+              <li class="hamburger-social-item">
+                <a
+                  class="hamburger-social-link link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="hamburger-social-link-box" width="32" height="32">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  class="hamburger-social-link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="hamburger-social-link-box" width="32" height="32">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  class="hamburger-social-link link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="hamburger-social-link-box" width="32" height="32">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  class="hamburger-social-link link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="hamburger-social-link-box" width="32" height="32">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
     <!-- Filters Section -->
     <main>
-      <section class="section">
+      <section class="section filters-section">
         <div class="container projects-container">
           <ul class="filters-list list">
             <li class="filters-item">
@@ -292,77 +408,79 @@
       <!-- </section> -->
     </main>
 
-    <!-- Footer Section -->
+    <!--Footer-->
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-wrapper list">
-          <li class="footer-list-item">
-            <a href="./index.html" class="footer-logo link">
-              <span class="footer-logo-web">WEB</span>STUDIO
-            </a>
-            <p class="footer-text text">
-              Increase the flow of customers and<br />
-              sales for your business with digital<br />
-              marketing & growth solutions.
-            </p>
-          </li>
+          <!-- <li class="footer-list-item"> -->
+          <a href="./index.html" class="footer-logo link">
+            <span class="footer-logo-web">WEB</span>STUDIO
+          </a>
+          <p class="footer-text text">
+            Increase the flow of customers and<br />
+            sales for your business with digital<br />
+            marketing & growth solutions.
+          </p>
         </div>
         <div class="footer-socials">
           <p class="footer-socials-text text">Social media</p>
           <ul class="footer-list list">
-            <li class="footer-socials-list">
-              <a href="#" class="footer-socials-link">
-                <svg class="footer-socials-link-box" width="32" height="32">
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-icon" width="32" height="32">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-list">
-              <a href="#" class="footer-socials-link">
-                <svg class="footer-socials-link-box" width="32" height="32">
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-icon" width="32" height="32">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-list">
-              <a href="#" class="footer-socials-link">
-                <svg class="footer-socials-link-box" width="32" height="32">
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-icon" width="32" height="32">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="footer-socials-list">
-              <a href="#" class="footer-socials-link">
-                <svg class="footer-socials-link-box" width="32" height="32">
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-icon" width="32" height="32">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-
         <!-- FOOTER FORM -->
-        <div class="footer-form-part form">
-          <p class="footer-form-label">Subscribe</p>
-          <form class="footer-form" name="footer-form">
+        <div class="footer-form-container">
+          <form
+            class="footer-subscription-form"
+            name="subscribe-form"
+            autocomplete="on"
+          >
             <!-- Email -->
             <label class="footer-form-field">
+              <span class="footer-subscription-text"> Subscribe </span>
               <input
                 class="footer-form-input"
                 type="email"
-                name="user-email"
+                name="subscription-email"
                 placeholder="E-mail"
                 required
               />
             </label>
 
             <!-- Footer Form Button -->
-            <button class="footer-form-button button" type="submit">
+            <button class="footer-subscription-button" type="submit">
               Subscribe
-              <svg class="footer-subscribe-icon" width="24" height="24">
+              <svg class="footer-subscription-icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe-icon"></use>
               </svg>
             </button>
@@ -373,5 +491,8 @@
 
     <!-- MODAL SCRIPT -->
     <script src="./js/modal.js"></script>
+
+    <!-- HAMBURGER MENU SCRIPT -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
