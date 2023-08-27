@@ -261,72 +261,7 @@ body {
 /* Hero section */
 .hero {
   background-color: var(--navyblue, #2e2f42);
-  /* padding: 112px 0;
-  background-image: url(../images/hero-bg-d.png), url(../images/hero-bg-m.jpg),
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
-  background-size: cover, cover; */
-
-  /* @media screen and (min-width: 768px) {
-    background-image: unset;
-  } */
-
-  /* Mobile 2x */
-  /* @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/dark-hero-bg.png),
-      url(../images/hero-bg-m@2x.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-  } */
-
-  /* Tablet 1x */
-  /* @media screen and (min-width: 768px) {
-    padding: 112px 0;
-    background-image: url(../images/dark-hero-bg.png),
-      url(../images/hero-bg-t.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)); */
-
-  /* Tablet2x */
-  /* @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/dark-hero-bg.png),
-        url(../images/hero-bg-t@2x.jpg),
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    }
-  } */
-
-  /* Desktop 1x */
-  /* @media screen and (min-width: 1158px) {
-    padding: 188px 0;
-    background-image: url(../images/dark-hero-bg.png),
-      url(../images/hero-bg-d.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    background-size: 1440px, 1440px; */
-
-  /* Desktop 2x */
-  /* @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/dark-hero-bg.png),
-        url(../images/hero-bg-d@2x.jpg),
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-    }
-  } */
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 112px 0;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
@@ -384,6 +319,17 @@ body {
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     }
   }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
