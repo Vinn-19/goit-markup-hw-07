@@ -279,7 +279,7 @@ body {
 
 /* Hero section */
 .hero {
-  background-color: var(--navyblue, #2e2f42);
+  background-color: var(--navyblue-color);
   padding: 112px 0;
   background-image: linear-gradient(
       to right,
@@ -301,7 +301,7 @@ body {
     (min-resolution: 2dppx) {
     background-image: url(../images/dark-hero-bg.png),
       url(../images/hero-bg-m@2x.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+      linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   }
 
   /* Tablet 1x */
@@ -309,7 +309,7 @@ body {
     padding: 112px 0;
     background-image: url(../images/dark-hero-bg.png),
       url(../images/hero-bg-t.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+      linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 
     /* Tablet2x */
     @media (min-device-pixel-ratio: 2),
@@ -317,7 +317,7 @@ body {
       (min-resolution: 2dppx) {
       background-image: url(../images/dark-hero-bg.png),
         url(../images/hero-bg-t@2x.jpg),
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+        linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     }
   }
 
@@ -326,7 +326,7 @@ body {
     padding: 188px 0;
     background-image: url(../images/dark-hero-bg.png),
       url(../images/hero-bg-d.jpg),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+      linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     background-size: 1440px, 1440px;
 
     /* Desktop 2x */
@@ -335,7 +335,7 @@ body {
       (min-resolution: 2dppx) {
       background-image: url(../images/dark-hero-bg.png),
         url(../images/hero-bg-d@2x.jpg),
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+        linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     }
   }
 }
@@ -399,17 +399,17 @@ body {
 
 /*  section 2-3*/
 .section {
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding-bottom: 96px;
+  padding-top: 96px;
   background-color: var(--white-color);
 
   @media screen and (min-width: 768px) {
-    padding-top: 64px;
+    padding-top: 96px;
     padding-bottom: 96px;
   }
 
   @media screen and (min-width: 1158px) {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 120px;
   }
 }
@@ -751,8 +751,16 @@ body {
 
 /* Footer section */
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: var(--navyblue-color);
+
+  @media screen and (min-width: 768px) {
+    padding: 96px 0;
+  }
+
+  @media screen and (min-width: 1158px) {
+    padding: 100px 0;
+  }
 }
 
 .footer-container {
@@ -1042,6 +1050,20 @@ body {
 
 /* Portfolio page*/
 /* Filters section */
+.filters-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
 
 .filters-container {
   display: flex;
@@ -1211,8 +1233,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 392px;
-  padding: 72px 24px 24px 24px;
+  width: 100vw;
+  height: 100vh;
+  /* width: 392px; */
+  padding: 72px 24px 24px;
   background-color: var(--dairy-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -1223,13 +1247,14 @@ body {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 428px) {
     width: 408px;
+    height: auto;
   }
 
-  @media screen and (min-width: 1158px) {
+  /* @media screen and (min-width: 1158px) {
     width: 408px;
-  }
+  } */
 }
 
 .backdrop.is-hidden .modal {
@@ -1500,6 +1525,35 @@ body {
   padding: 0;
   width: 24px;
   height: 24px;
+
+  background-color: var(--cornflower-color);
+  color: var(--navyblue-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+.hamburger-close-button:hover,
+.hamburger-close-button:focus {
+  background-color: var(--ocean-color);
+  border: 1px solid var(--ocean-color);
+  color: var(--white-color);
+}
+
+/* .hamburger-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
   background-color: var(--cornflower-color);
   color: var(--navyblue-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1519,7 +1573,7 @@ body {
   color: var(--white-color);
   background-color: var(--ocean-color);
   border: 1px solid var(--ocean-color);
-}
+} */
 
 /* Mobile Navigation */
 .hamburger-menu-item {
